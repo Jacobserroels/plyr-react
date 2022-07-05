@@ -77,7 +77,7 @@ const Plyr = React.forwardRef((props, ref) => {
   }, rest));
 });
 if ((import.meta.env && import.meta.env.MODE) !== "production") {
-  const PropTypes = require("prop-types");
+  const PropTypes = import("prop-types");
   Plyr.displayName = "Plyr";
   Plyr.defaultProps = {
     options: {
